@@ -11,6 +11,12 @@ export const Navbar = ({ auth, logout }) => {
         <Link to='/profiles'>Developers</Link>
       </li>
       <li>
+        <Link to='/posts'>
+          <i className='fas fa-posts'></i>
+          <span className='hide-sm'> Posts</span>
+        </Link>
+      </li>
+      <li>
         <Link to='/dashboard'>
           <i className='fas fa-user'></i>
           <span className='hide-sm'> Dashboard</span>
@@ -32,9 +38,6 @@ export const Navbar = ({ auth, logout }) => {
       </li>
       <li>
         <Link to='/register'>Register</Link>
-      </li>
-      <li>
-        <Link to='/profile'>Profile</Link>
       </li>
     </ul>
   );
