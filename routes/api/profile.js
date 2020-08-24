@@ -7,7 +7,6 @@ const User = require('../../models/User');
 const Post = require('../../models/Post');
 const request = require('request');
 const config = require('config');
-const nodemon = require('nodemon');
 
 // @route   GET api/pofile/me
 // @desc    Test route
