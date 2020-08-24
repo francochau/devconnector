@@ -5,10 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
-
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run start\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "Franco Chau",
   "license": "MIT",
