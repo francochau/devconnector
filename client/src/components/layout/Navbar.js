@@ -47,7 +47,7 @@ export const Navbar = ({ auth, logout }) => {
       <h1>
         <Link to='/'>
           <i className='fas fa-code' />
-          <span> DevConnector</span>
+          <span> DevHub</span>
         </Link>
       </h1>
       {!auth.loading && (
