@@ -20,6 +20,11 @@ function Login({ isAuthenticated, login }) {
     login({ email, password });
   };
 
+  const onClick = async (e) => {
+    e.preventDefault();
+    login({ email: 'testing@testing.com', password: 'testing' });
+  };
+
   // Redirect if logged in
   if (isAuthenticated) {
     return <Redirect to='/dashboard'></Redirect>;
@@ -64,6 +69,12 @@ function Login({ isAuthenticated, login }) {
       <p className='my-1'>
         Don't have an account? <Link to='/register'>Sign Up</Link>
       </p>
+      <input
+        onClick={(e) => onClick(e)}
+        type='submit'
+        className='btn btn-primary'
+        value='Demo Account'
+      />
     </Fragment>
   );
 }
